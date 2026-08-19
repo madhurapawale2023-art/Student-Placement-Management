@@ -1,0 +1,15 @@
+<section class="page-head"><div><span class="eyebrow">OVERVIEW</span><h1>Placement Dashboard</h1><p>Monitor student placement performance and recruitment activity.</p></div><div class="head-actions"><a href="#!/students/new" class="btn btn-primary"><i class="bi bi-plus-lg"></i> Add Student</a><a href="#!/companies/new" class="btn btn-outline-primary"><i class="bi bi-building-add"></i> Add Company</a></div></section>
+<div class="stat-grid">
+  <div class="stat-card"><div class="stat-icon"><i class="bi bi-people"></i></div><div><span>Total Students</span><strong>{{statsData.students}}</strong></div></div>
+  <div class="stat-card"><div class="stat-icon success"><i class="bi bi-person-check"></i></div><div><span>Placed Students</span><strong>{{statsData.placed}}</strong></div></div>
+  <div class="stat-card"><div class="stat-icon"><i class="bi bi-building"></i></div><div><span>Companies</span><strong>{{statsData.companies}}</strong></div></div>
+  <div class="stat-card"><div class="stat-icon warning"><i class="bi bi-file-earmark-text"></i></div><div><span>Applications</span><strong>{{statsData.applications}}</strong></div></div>
+  <div class="stat-card"><div class="stat-icon success"><i class="bi bi-graph-up-arrow"></i></div><div><span>Placement Rate</span><strong>{{statsData.rate}}%</strong></div></div>
+  <div class="stat-card"><div class="stat-icon purple"><i class="bi bi-cash-stack"></i></div><div><span>Average Package</span><strong>₹{{statsData.avg}} LPA</strong></div></div>
+  <div class="stat-card"><div class="stat-icon danger"><i class="bi bi-trophy"></i></div><div><span>Highest Package</span><strong>₹{{statsData.high}} LPA</strong></div></div>
+</div>
+<div class="dashboard-grid">
+  <div class="panel"><div class="panel-head"><h3>Department-wise Placement</h3><span class="muted">Current batch</span></div><div class="dept-row" ng-repeat="(dept,val) in departments"><div class="dept-top"><span>{{dept}}</span><strong>{{val.placed}} / {{val.total}}</strong></div><div class="progress"><div class="progress-bar" style="width:{{val.total ? (val.placed/val.total*100) : 0}}%"></div></div></div></div>
+  <div class="panel"><div class="panel-head"><h3>Upcoming Interviews</h3><a href="#!/students">View all</a></div><div class="activity" ng-repeat="s in upcoming"><div class="activity-icon"><i class="bi bi-calendar-event"></i></div><div><strong>{{s.name}}</strong><p>{{s.company || "Company pending"}} · {{s.interviewDate}}</p></div></div><div class="empty" ng-if="!upcoming.length">No upcoming interviews.</div></div>
+</div>
+<div class="panel mt-4"><div class="panel-head"><h3>Quick Actions</h3></div><div class="quick-grid"><a href="#!/students/new"><i class="bi bi-person-plus"></i><span>Add Student</span></a><a href="#!/companies/new"><i class="bi bi-building-add"></i><span>Add Company</span></a><a href="#!/applications"><i class="bi bi-file-plus"></i><span>New Application</span></a><a href="#!/placements"><i class="bi bi-award"></i><span>Record Placement</span></a><a href="#!/reports"><i class="bi bi-file-earmark-bar-graph"></i><span>View Reports</span></a></div></div>

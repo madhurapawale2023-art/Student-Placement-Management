@@ -1,0 +1,1 @@
+angular.module("placementApp").filter("currencyLPA",function(){return function(v){return v?"₹ "+Number(v).toFixed(2)+" LPA":"—";};}).filter("titleCase",function(){return function(v){return v?String(v).replace(/\w\S*/g,function(t){return t.charAt(0).toUpperCase()+t.substr(1).toLowerCase();}):"";};});

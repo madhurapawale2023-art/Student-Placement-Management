@@ -1,0 +1,1 @@
+angular.module("placementApp").directive("statusBadge",function(){return{restrict:"A",scope:{status:"=statusBadge"},template:'<span class="badge status-{{status|lowercase|replaceSpace}}">{{status}}</span>',link:function(s){s.replaceSpace=function(v){return String(v||"").replace(/\\s+/g,"-");};}};});

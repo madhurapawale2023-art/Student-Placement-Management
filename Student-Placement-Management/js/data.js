@@ -1,0 +1,29 @@
+window.DEMO_DATA = {
+  students: [
+    {id:"STU001",name:"Aarav Sharma",email:"aarav.sharma@example.com",phone:"9876543210",gender:"Male",dob:"2004-04-12",department:"Computer Engineering",batch:"2027",cgpa:8.4,tenth:88,twelfth:82,location:"Pune",skills:"JavaScript, SQL, Python",placementStatus:"Placed",applicationStatus:"Selected",company:"TCS",jobRole:"Graduate Engineer Trainee",package:6.5,interviewDate:"2026-08-05",interviewNotes:"Selected in technical and HR rounds.",notes:"Strong communication and analytical skills."},
+    {id:"STU002",name:"Neha Patil",email:"neha.patil@example.com",phone:"9823456712",gender:"Female",dob:"2005-01-19",department:"Information Technology",batch:"2027",cgpa:8.9,tenth:93,twelfth:89,location:"Nashik",skills:"Java, SQL, Power BI",placementStatus:"Placed",applicationStatus:"Selected",company:"Infosys",jobRole:"System Engineer",package:5.8,interviewDate:"2026-08-07",interviewNotes:"Excellent technical performance.",notes:"Interested in data and business analytics."},
+    {id:"STU003",name:"Rohan Jadhav",email:"rohan.jadhav@example.com",phone:"9765432189",gender:"Male",dob:"2004-11-08",department:"Mechanical Engineering",batch:"2027",cgpa:7.6,tenth:81,twelfth:78,location:"Ahmednagar",skills:"AutoCAD, Excel, Python",placementStatus:"In Process",applicationStatus:"Shortlisted",company:"Tech Mahindra",jobRole:"Associate Engineer",package:0,interviewDate:"2026-08-25",interviewNotes:"Technical interview scheduled.",notes:"Good problem-solving skills."},
+    {id:"STU004",name:"Priya Kulkarni",email:"priya.k@example.com",phone:"9812345670",gender:"Female",dob:"2005-06-23",department:"Electronics",batch:"2027",cgpa:8.1,tenth:86,twelfth:84,location:"Mumbai",skills:"Embedded C, IoT, SQL",placementStatus:"Not Placed",applicationStatus:"Applied",company:"",jobRole:"",package:0,interviewDate:"",interviewNotes:"",notes:"Looking for embedded opportunities."}
+  ],
+  companies: [
+    {id:"COM001",name:"TCS",industry:"IT Services",website:"https://www.tcs.com",hrEmail:"careers@example.com",hrContact:"9876500011",city:"Pune",state:"Maharashtra",country:"India",workMode:"Hybrid",jobRole:"Graduate Engineer Trainee",eligibility:"B.E./B.Tech",minCgpa:7,experience:"Fresher",openPositions:20,averagePackage:6.5,highestPackage:8.5,lowestPackage:5.5,status:"Active"},
+    {id:"COM002",name:"Infosys",industry:"IT Services",website:"https://www.infosys.com",hrEmail:"hr@example.com",hrContact:"9876500022",city:"Pune",state:"Maharashtra",country:"India",workMode:"On-site",jobRole:"System Engineer",eligibility:"B.E./B.Tech",minCgpa:7.5,experience:"Fresher",openPositions:15,averagePackage:5.8,highestPackage:7.2,lowestPackage:4.8,status:"Active"},
+    {id:"COM003",name:"Tech Mahindra",industry:"Technology",website:"https://www.techmahindra.com",hrEmail:"talent@example.com",hrContact:"9876500033",city:"Mumbai",state:"Maharashtra",country:"India",workMode:"Hybrid",jobRole:"Associate Engineer",eligibility:"Engineering Graduate",minCgpa:6.5,experience:"Fresher",openPositions:12,averagePackage:5.2,highestPackage:7,lowestPackage:4.2,status:"Active"}
+  ],
+  applications: [
+    {id:"APP001",studentId:"STU001",student:"Aarav Sharma",company:"TCS",role:"Graduate Engineer Trainee",applyDate:"2026-07-12",status:"Selected",remarks:"Offer received",package:6.5},
+    {id:"APP002",studentId:"STU002",student:"Neha Patil",company:"Infosys",role:"System Engineer",applyDate:"2026-07-15",status:"Selected",remarks:"Offer received",package:5.8},
+    {id:"APP003",studentId:"STU003",student:"Rohan Jadhav",company:"Tech Mahindra",role:"Associate Engineer",applyDate:"2026-08-01",status:"Interview",remarks:"Interview scheduled",package:0},
+    {id:"APP004",studentId:"STU004",student:"Priya Kulkarni",company:"TCS",role:"Graduate Engineer Trainee",applyDate:"2026-08-04",status:"Applied",remarks:"Application submitted",package:0}
+  ],
+  placements: [
+    {id:"PLC001",studentId:"STU001",student:"Aarav Sharma",company:"TCS",role:"Graduate Engineer Trainee",package:6.5,joiningDate:"2027-06-15",location:"Pune",status:"Confirmed"},
+    {id:"PLC002",studentId:"STU002",student:"Neha Patil",company:"Infosys",role:"System Engineer",package:5.8,joiningDate:"2027-06-20",location:"Pune",status:"Confirmed"}
+  ],
+  activities: [
+    {type:"Placement",text:"Aarav Sharma placed at TCS",date:"2026-08-05"},
+    {type:"Placement",text:"Neha Patil placed at Infosys",date:"2026-08-07"},
+    {type:"Interview",text:"Rohan Jadhav interview scheduled",date:"2026-08-18"},
+    {type:"Application",text:"Priya Kulkarni applied to TCS",date:"2026-08-04"}
+  ]
+};

@@ -1,0 +1,197 @@
+# 🎓 Student Placement Management System 
+ 
+A professional, responsive, and user-friendly **Student Placement Management System** built using AngularJS, HTML5, CSS3, JavaScript, Bootstrap 5, Bootstrap Icons, and Browser LocalStorage. 
+ 
+This project is designed to help colleges and placement departments manage students, companies, job applications, interviews, placements, salary packages, and placement analytics from a single centralized dashboard. 
+ 
+--- 
+ 
+## 📌 Project Overview 
+ 
+The Student Placement Management System provides a complete solution for managing the student placement process. 
+ 
+The system allows placement coordinators to: 
+ 
+- Manage student records 
+- Manage recruiting companies 
+- Track job applications 
+- Track application status 
+- Schedule and manage interviews 
+- Manage placement records 
+- Track salary packages 
+- View placement analytics 
+- Export student data to CSV 
+- Export placement data to CSV 
+- View recent placement activities 
+- Store application data using LocalStorage 
+- Reset application data using demo data 
+ 
+--- 
+ 
+# ✨ Features 
+ 
+## 📊 Dashboard 
+ 
+The dashboard provides a quick overview of the complete placement process. 
+ 
+### Dashboard Statistics 
+ 
+- Total Students 
+- Placed Students 
+- Total Companies 
+- Total Applications 
+- Placement Rate 
+- Average Package 
+- Highest Package 
+ 
+### Dashboard Sections 
+ 
+- Placement overview 
+- Department-wise placement analytics 
+- Application status overview 
+- Recent activities 
+- Upcoming interviews 
+- Quick action buttons 
+ 
+--- 
+ 
+# 👨‍🎓 Student Management 
+ 
+The Student Management module provides complete CRUD functionality. 
+ 
+### Student Features 
+ 
+- Add student 
+- View student 
+- Edit student 
+- Delete student 
+- Search students 
+- Filter students 
+- Department filter 
+- Batch filter 
+- Placement status filter 
+- Application status filter 
+- CGPA filter 
+ 
+### Student Information 
+ 
+- Student ID 
+- Student Name 
+- Email 
+- Phone 
+- Gender 
+- Date of Birth 
+- Department 
+- Batch 
+- CGPA 
+- 10th Percentage 
+- 12th Percentage 
+- Location 
+- Skills 
+- Placement Status 
+- Application Status 
+- Company 
+- Job Role 
+- Package 
+- Interview Date 
+- Interview Notes 
+- Additional Notes 
+ 
+--- 
+ 
+# 🏢 Company Management 
+ 
+The Company Management module allows placement coordinators to manage recruiting companies. 
+ 
+### Company Features 
+ 
+- Add company 
+- View company 
+- Edit company 
+- Delete company 
+- Search companies 
+- Filter companies 
+- Track company status 
+- Track open positions 
+- Track salary packages 
+ 
+### Company Information 
+ 
+- Company ID 
+- Company Name 
+- Industry 
+- Website 
+- HR Email 
+- HR Contact 
+- City 
+- State 
+- Country 
+- Work Mode 
+- Job Role 
+- Eligibility 
+- Minimum CGPA 
+- Experience 
+- Open Positions 
+- Average Package 
+- Highest Package 
+- Lowest Package 
+ 
+--- 
+ 
+# 📄 Application Management 
+ 
+The Application Management module tracks student job applications. 
+ 
+## Application Status Workflow 
+ 
+```text 
+Applied 
+   ↓ 
+Shortlisted 
+   ↓ 
+Interview 
+   ↓ 
+Selected 
+
+Student-Placement-Management/
+│
+├── index.html
+│
+├── css/
+│   ├── style.css
+│   ├── dashboard.css
+│   ├── forms.css
+│   └── responsive.css
+│
+├── js/
+│   ├── app.js
+│   ├── controllers.js
+│   ├── services.js
+│   ├── filters.js
+│   ├── directives.js
+│   └── data.js
+│
+├── views/
+│   ├── dashboard.html
+│   ├── students.html
+│   ├── student-form.html
+│   ├── companies.html
+│   ├── company-form.html
+│   ├── placements.html
+│   ├── applications.html
+│   └── reports.html
+│
+├── components/
+│   ├── navbar.html
+│   ├── sidebar.html
+│   ├── toast.html
+│   ├── student-modal.html
+│   ├── company-modal.html
+│   └── confirmation-modal.html
+│
+├
+│
+├── data/
+│   └── demo-data.json
+│
+└── README.md 
